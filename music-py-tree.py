@@ -2,7 +2,9 @@ import py_trees
 import random
 
 class MusicCreator(py_trees.behaviour.Behaviour):
-
+    """
+    This a test class to create show random notes to form music
+    """
     def __init__(self, name="MusicCreator"):
         super(MusicCreator, self).__init__(name)
         self.notes = ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si"]

@@ -8,7 +8,7 @@ class Position:
     def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
-    
+
     def __str__(self) -> str:
         return "%d, %d" % (self.x, self.y)
 
@@ -19,7 +19,7 @@ class Robot:
     def __init__(self, name="Robot", pos=Position()):
         self.name = name
         self.pos = pos
-    
+
     def __str__(self):
         return self.name
 
@@ -184,8 +184,11 @@ def main():
 
     mission = pickup_sample_mission()
     mission.setup()
+    tick = 1
     while True:
+        print("\n-------------- Tick %d --------------\n" % tick)
         mission.tick_once()
+        tick += 1
         if mission.status == py_trees.common.Status.SUCCESS or mission.status == py_trees.common.Status.FAILURE:
             break
 

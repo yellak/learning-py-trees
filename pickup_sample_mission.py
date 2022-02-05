@@ -183,6 +183,7 @@ def main():
     py_trees.logging.level = py_trees.logging.Level.DEBUG
 
     mission = pickup_sample_mission()
+    print("{}".format(py_trees.display.unicode_tree(mission, show_status=True)))
     mission.setup()
     tick = 1
     while True:

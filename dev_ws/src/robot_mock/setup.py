@@ -13,14 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='kalley',
+    maintainer='Kálley Wilkerson',
     maintainer_email='kalleywra@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Libraries for mocking robots',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'battery = robot_mock.battery:main'
+            'battery_pub = robot_mock.battery:main'
         ],
     },
 )

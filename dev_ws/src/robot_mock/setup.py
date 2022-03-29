@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'battery_pub = robot_mock.battery:main'
+            'battery_pub = robot_mock.battery:main',
+            'move_controler_pub = robot_mock.move_controller:main'
         ],
     },
 )

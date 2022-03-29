@@ -32,7 +32,6 @@ class BatteryPublisher(Node):
         self.battery.serial_number = ""
 
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
 
     def timer_callback(self):
         self.battery.percentage -= 1

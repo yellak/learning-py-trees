@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from turtle import goto
-from venv import create
 import py_trees
 import py_trees_ros.trees
 import py_trees.console as console
